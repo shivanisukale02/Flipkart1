@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.8.5 on win32)" generated="20220407 15:30:33.886" rpa="false" schemaversion="3">
+<suite id="s1" name="Demo" source="C:\Users\sukal\PycharmProjects\RoboticFramework\Tests\SampleApp\FunctionalTestSuite\Demo.robot">
+<test id="s1-t1" name="Login page test case" line="9">
+<kw name="Log" library="BuiltIn">
+<arg>Hello</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220407 15:30:34.478" level="INFO">Hello</msg>
+<status status="PASS" starttime="20220407 15:30:34.478" endtime="20220407 15:30:34.478"/>
+</kw>
+<doc>login for user</doc>
+<tag>user</tag>
+<status status="PASS" starttime="20220407 15:30:34.475" endtime="20220407 15:30:34.480"/>
+</test>
+<test id="s1-t2" name="Registration page test case" line="14">
+<kw name="Log" library="BuiltIn">
+<arg>Welcome</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220407 15:30:34.484" level="INFO">Welcome</msg>
+<status status="PASS" starttime="20220407 15:30:34.484" endtime="20220407 15:30:34.485"/>
+</kw>
+<doc>registration page for user</doc>
+<tag>user</tag>
+<status status="PASS" starttime="20220407 15:30:34.482" endtime="20220407 15:30:34.485"/>
+</test>
+<test id="s1-t3" name="Dashboard test case" line="19">
+<kw name="Log" library="BuiltIn">
+<arg>Dash</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220407 15:30:34.491" level="INFO">Dash</msg>
+<status status="PASS" starttime="20220407 15:30:34.491" endtime="20220407 15:30:34.491"/>
+</kw>
+<doc>dashboard for use</doc>
+<status status="PASS" starttime="20220407 15:30:34.489" endtime="20220407 15:30:34.492"/>
+</test>
+<test id="s1-t4" name="Google test case" line="23">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220407 15:30:34.497" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
+<status status="PASS" starttime="20220407 15:30:34.495" endtime="20220407 15:30:40.479"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:q</arg>
+<arg>${search_parameter}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220407 15:30:40.484" level="INFO">Typing text 'Harman' into text field 'name:q'.</msg>
+<status status="PASS" starttime="20220407 15:30:40.483" endtime="20220407 15:30:40.725"/>
+</kw>
+<kw name="Submit Form" library="SeleniumLibrary">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20220407 15:30:40.726" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20220407 15:30:40.726" endtime="20220407 15:30:43.949"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220407 15:30:43.950" endtime="20220407 15:30:46.764"/>
+</kw>
+<doc>simple google test</doc>
+<status status="PASS" starttime="20220407 15:30:34.494" endtime="20220407 15:30:46.765"/>
+</test>
+<status status="PASS" starttime="20220407 15:30:33.895" endtime="20220407 15:30:46.768"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="2" fail="0" skip="0">user</stat>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="Demo">Demo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
